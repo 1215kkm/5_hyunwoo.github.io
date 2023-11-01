@@ -1,0 +1,794 @@
+html{cursor: url(../images/mouse_cursur.png), auto;}
+
+@font-face {
+    font-family: "snoopy";
+    src: url(snoopy_reg-webfont.otf) format("opentype");
+    font-family: "멜랑촐리체", "Rix멜랑촐리 M";
+    src: url(멜랑촐리체.ttf) format("truetype");
+  }
+
+#main {
+    width: 1920px;
+    height: 100vh;
+    position: relative;
+}
+
+body {
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* section1 */
+
+.section1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.section1_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.section1 .bg {
+    background: url(../images/section1_bg.jpg) no-repeat; 
+    background-position: 0 0; 
+    background-size: cover;  
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    left: 0; 
+    top: 0;
+}
+.section1 .active {
+    animation: movebg 7s linear infinite;
+}
+.section1 .walk {
+    width: 135px; 
+    height: 215px; 
+    overflow: hidden; 
+    animation: walk steps(1) forwards .8s infinite; 
+    background: url(../images/charlie_walk.png); 
+    background-size: 810px 215px; 
+    background-position: 0 0; 
+    position: absolute; 
+    background-repeat: no-repeat; 
+    top: 350px; 
+    left: 920px;
+}
+.section1 h1 {
+    position: absolute; 
+    font-size: 50px; 
+    left: 730px; 
+    top: 700px; 
+    color: #fff; 
+    text-shadow: -2px 0 #000, 0 5px #000, 5px 0 #000, 0 -2px #000;
+}
+.section1 h2 {
+    position: absolute; 
+    font-size: 50px; 
+    left: 730px; 
+    top: 780px; 
+    color: #fff; 
+    text-shadow: -2px 0 #000, 0 5px #000, 5px 0 #000, 0 -2px #000;
+}
+.section1 h3 {
+    position: absolute;
+    font-size: 70px;
+    color: #fff;
+    text-shadow: -1px 0 #000, 0 2px #000, 5px 0 #000, 0 -1px #000;
+    top: 130px;
+    left: 730px;
+}
+.section1 .arrow1 img {
+    position: absolute; 
+    width: 30px; 
+    height: 30px; 
+    left: 690px; 
+    top: 712px; 
+    display: none;
+}
+.section1 .arrow2 img {
+    position: absolute; 
+    width: 30px; 
+    height: 30px; 
+    left: 690px; 
+    top: 792px; 
+    display: none;
+}
+.stop img {
+    position: absolute; 
+    top: 350px; 
+    left: 920px; 
+    display: none;
+}
+
+@keyframes movebg {
+    100% {background-position: -1920px 0;}
+}
+
+@keyframes walk {
+    0% {background-position: 0 0;}
+    16.66667% {background-position: -135px 0;}
+    33.33333% {background-position: -270px 0;}
+    50% {background-position: -405px 0;}
+    66.66668% {background-position: -540px 0;}
+    83.33335% {background-position: -675px 0;}
+    100% {background-position: -810px 0;}
+}
+
+/* section2 */
+
+.section2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 90;
+}
+.section2_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.section2 .bg {
+    background: url(../images/section2_bg.jpg) no-repeat center; 
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.section2 .sec2_snoopy_closed {
+    position: absolute;
+    width: 150px;
+    height: 190px;
+    top: 240px;
+    left: 130px;
+}
+.section2 .sec2_snoopy_closed img {
+    width: 150px;
+    height: 190px;
+}
+.section2 .sec2_snoopy_opened {
+    position: absolute;
+    width: 150px;
+    height: 190px;
+    top: 240px;
+    left: 130px;
+    display: none;
+}
+.section2 .sec2_snoopy_opened img {
+    width: 150px;
+    height: 190px;
+}
+.section2 .wordbubble {
+    position: absolute; 
+    top: 135px;
+    left: 150px;
+}
+.section2 h1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.section2 h2 {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+.section2 .profile_bubble {
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    top: 35px;
+    left: 480px;
+    overflow: hidden;
+}
+.section2 .profile_bubble img {
+    width: 500px;
+    display: none;
+}
+.section2 .profile_bub1 {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+}
+.section2 .profile_bub2 {
+    position: absolute;
+    bottom: 250px;
+    left: 0;
+}
+.section2 .profile_bub3 {
+    position: absolute;
+    bottom: 475px;
+    left: 0;
+}
+.section2 .cb_bubble {
+    position: absolute;
+    bottom: 0;
+    left: 650px;
+    width: 180px;
+}
+.section2 .sn_bubble {
+    position: absolute;
+    bottom: 0;
+    right: 500px;
+}
+.section2 p {
+    position: absolute;
+    font-size: 26px;
+    color: #fff;
+    letter-spacing: 0.05em;
+    text-shadow: -1px 0 #000, 0 2px #000, 3px 0 #000, 0 -1px #000;
+}
+.section2 .cb_click {
+    bottom: 240px;
+    left: 670px;
+}
+.section2 .sn_click {
+    bottom: 170px;
+    right: 490px;
+}
+.section2 .profile_bubble2 {
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    top: 35px;
+    right: 320px;
+}
+.section2 .profile_bubble2 img {
+    width: 500px;
+    display: none;
+}
+.section2 .profile_bub4 {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+}
+.section2 .profile_bub5 {
+    position: absolute;
+    bottom: 250px;
+    left: 0;
+}
+.section2 .profile_bub6 {
+    position: absolute;
+    bottom: 475px;
+    left: 0;
+}
+.section2 .snoopymoon {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    width: 200px;
+}
+.section2 .snoopymoon_go {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    width: 200px;
+    display: none;
+}
+.section2 .snoopymoon_bubble {
+    position: absolute;
+    bottom: 250px;
+    right: 60px;
+}
+
+/* section3 */
+
+.section3 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    z-index: 80;
+    overflow-y: hidden;
+}
+.section3_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.section3 .bg {
+    background: url(../images/space_bg.jpg) no-repeat bottom; 
+    background-size: cover;
+    background-position: center bottom 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+.section3.action .bg {
+    animation: spacebg 10s linear;
+    animation-delay: 5s;
+}
+.section3 .rocket {
+    width: 375px;
+    height: 800px;
+    position: absolute;
+    left: 800px;
+}
+.section3.action .rocket {
+    animation: rocketfly 5s forwards;
+    overflow: hidden;
+}
+.section3.action .rocketfire {
+    width: 375px;
+    height: 800px;
+    background-image: url(../images/rocketfire.png);
+    background-position: 0 0;
+    overflow: hidden;
+    animation: rocketfire forwards;
+    animation-delay: 5s;
+}
+@keyframes spacebg {
+    0% {background-position: center bottom 0px;;}
+    100% {background-position: center bottom -4000px;}
+}
+@keyframes rocketfly {
+    0% {bottom: -1000px;}
+    100% {bottom: 20px;}
+}
+@keyframes rocketfire {
+    0% {background-position: 0 0;}
+    100% {background-position: -375px 0;}
+}
+
+/* section4 */
+
+.section4 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 70;
+}
+.section4_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.section4 .bg {
+    background: url(../images/profile_bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.section4 .space_float_snoopy {
+    position: absolute;
+    width: 200px;
+    top: 160px;
+    right: 280px;
+    animation: turn 45s infinite linear;
+}
+.section4 .space_float_snoopy:hover {
+    filter: brightness(105%);
+}
+.section4 .moon {
+    position: absolute;
+    width: 600px;
+    top: 350px;
+    left: 350px;
+    animation: turn 500s infinite linear;
+    transform-origin: 35% 50%;
+}
+.section4 .moon:hover {
+    filter: brightness(110%);
+}
+.section4 .mainmenu_go {
+    position: absolute;
+    top: 40px;
+    right: 290px;
+}
+.section4 .space_float_charlie {
+    position: absolute;
+    top: 260px;
+    right: 700px;
+    animation: turn 60s infinite linear;
+}
+.section4 .works_bubble {
+    position: absolute;
+    top: 150px;
+    right: 750px;
+}
+.section4 .charlie_space {
+    position: absolute;
+    width: 180px;
+    bottom: 200px;
+    right: 200px;
+    animation: turn 50s infinite linear;
+}
+.section4 .wood_space {
+    position: absolute;
+    bottom: 100px;
+    right: 500px;
+    animation: turn 30s infinite linear;
+}
+.section4 .star01 {
+    position: absolute;
+    width: 200px;
+    top: 200px;
+    left: 100px;
+}
+.section4 .star02 {
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    animation: turn 300s linear infinite;
+}
+.section4 .star03 {
+    position: absolute;
+    bottom: 150px;
+    left: 150px;
+    animation: turn 300s linear infinite;
+}
+@keyframes turn {
+    100% {transform: rotate(360deg);}
+}
+
+/* section5 */
+
+.section5 {
+    position: absolute;
+    width: 100%;
+    height: 3000px;
+    top: 0;
+    left: 0;
+    z-index: 60;
+}
+.section5_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.section5 .bg {
+    background: url(../images/works_bg.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.section5 h1 {
+    position: absolute;
+    top: 180px;
+    left: 850px;
+    font-size: 70px;
+    font-weight: 500;
+}
+.section5 .web_back {
+    position: absolute;
+    width: 60px;
+    top: 180px;
+    left: 50px;
+}
+.section5 .ajouthumb {
+    position: absolute;
+    width: 885px;
+    height: 447px;
+    top: 350px;
+    left: 50px;
+    box-shadow: 5px 5px 5px #000;
+}
+.section5 .ajoumthumb {
+    position: absolute;
+    width: 180px;
+    top: 500px;
+    left: 40px;
+    filter: drop-shadow(6px 6px 6px #000);
+}
+.section5 .lsthumb {
+    position: absolute;
+    width: 885px;
+    top: 350px;
+    right: 50px;
+    box-shadow: 5px 5px 5px #000;
+}
+.section5 .applethumb {
+    position: absolute;
+    width: 885px;
+    top: 947px;
+    left: 50px;
+    box-shadow: 5px 5px 5px #000;
+}
+.section5 .worksdetailarrow {
+    position: absolute;
+    width: 250px;
+    top: 265px;
+    left: 280px;
+}
+.section5 .works_pencil {
+    position: absolute;
+    width: 450px;
+    top: 1200px;
+    right: -10px;
+    filter: drop-shadow(-3px 3px 3px #000);
+}
+.section5 .draw1 {
+    position: absolute;
+    width: 250px;
+    top: 900px;
+    right: 530px;
+}
+.section5 .draw2 {
+    position: absolute;
+    width: 250px;
+    top: 950px;
+    right: 100px;
+}
+.section5 .draw3 {
+    position: absolute;
+    width: 500px;
+    top: 1150px;
+    right: 260px;
+}
+.section5 h2 {
+    position: absolute;
+    font-size: 70px;
+    font-weight: 500;
+    top: 1520px;
+    left: 915px;
+}
+.section5 .banners {
+    position: absolute;
+    width: 1560px;
+    left: 180px;
+    top: 1670px;
+}
+.section5 .banner_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.section5 .banner_wrap img {
+    box-shadow: 5px 5px 5px #000;
+}
+.section5 .banner_wrap .small {
+    margin-right: 50px;
+}
+
+/* ajou */
+
+.ajou {
+    position: absolute;
+    width: 100%;
+    height: 3700px;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    display: none;
+}
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.ajou .bg {
+    background: url(../images/works_bg.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.ajou h1 {
+    position: absolute;
+    top: 180px;
+    left: 600px;
+    font-size: 70px;
+    font-weight: 500;
+}
+.ajou .ajou_back {
+    position: absolute;
+    width: 60px;
+    top: 180px;
+    left: 50px;
+}
+.ajou p {
+    font-size: 26px;
+    letter-spacing: -0.05em;
+}
+.ajou .ajoumain {
+    position: absolute;
+    width: 885px;
+    top: 350px;
+    left: 50px;
+    box-shadow: 5px 5px 5px #000;
+}
+.ajou .p_ajoumain {
+    position: absolute;
+    top: 320px;
+    left: 50px;
+}
+.ajou .ajoumain_detail {
+    position: absolute;
+    width: 885px;
+    top: 350px;
+    right: 50px;
+    box-shadow: 5px 5px 5px #000;
+}
+.ajou .p_ajoumain_detail {
+    position: absolute;
+    top: 320px;
+    left: 985px;
+}
+.ajou .ajoulogin {
+    position: absolute;
+    width: 885px;
+    top: 2002.66px;
+    left: 50px;
+    box-shadow: 5px 5px 5px #000;
+}
+.ajou .p_ajoulogin {
+    position: absolute;
+    top: 1972.66px;
+    left: 50px;
+}
+.ajou .m_ajoumain {
+    position: absolute;
+    width: 260px;
+    top: 2002.66px;
+    left: 985px;
+    box-shadow: 5px 5px 5px #000;
+}
+.ajou .p_m_ajoumain {
+    position: absolute;
+    top: 1972.66px;
+    left: 985px;
+}
+.ajou .m_ajoumain_detail {
+    position: absolute;
+    width: 260px;
+    top: 2002.66px;
+    left: 1295px;
+    box-shadow: 5px 5px 5px #000;
+}
+.ajou .p_m_ajoumain_detail {
+    position: absolute;
+    top: 1972.66px;
+    left: 1295px;
+}
+.ajou .m_ajoulogin {
+    position: absolute;
+    width: 260px;
+    top: 2002.66px;
+    left: 1605px;
+    box-shadow: 5px 5px 5px #000;
+}
+.ajou .p_m_ajoulogin {
+    position: absolute;
+    top: 1972.66px;
+    left: 1605px;
+}
+
+/* little star */
+
+.star {
+    position: absolute;
+    width: 100%;
+    height: 3000px;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.star .bg {
+    background: url(../images/works_bg.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.star h1 {
+    position: absolute;
+    top: 180px;
+    left: 680px;
+    font-size: 70px;
+    font-weight: 500;
+}
+.star .star_back {
+    position: absolute;
+    width: 60px;
+    top: 180px;
+    left: 50px;
+}
+.star p {
+    font-size: 26px;
+    letter-spacing: -0.05em;
+}
+.star .starmain {
+    position: absolute;
+    width: 885px;
+    top: 350px;
+    left: 50px;
+    box-shadow: 5px 5px 5px #000;
+}
+.star .p_starmain {
+    position: absolute;
+    top: 320px;
+    left: 50px;
+}
+.star .starmain_detail {
+    position: absolute;
+    width: 885px;
+    top: 350px;
+    right: 50px;
+    box-shadow: 5px 5px 5px #000;
+}
+.star .p_starmain_detail {
+    position: absolute;
+    top: 320px;
+    left: 985px;
+}
+.star .starsub {
+    position: absolute;
+    width: 885px;
+    top: 2630.23px;
+    left: 50px;
+    box-shadow: 5px 5px 5px #000;
+}
+.star .p_starsub {
+    position: absolute;
+    top: 2600.23px;
+    left: 50px;
+}
+
+/* apple */
+
+.apple {
+    position: absolute;
+    width: 100%;
+    height: 3000px;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.apple .bg {
+    background: url(../images/works_bg.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.apple h1 {
+    position: absolute;
+    top: 180px;
+    left: 670px;
+    font-size: 70px;
+    font-weight: 500;
+}
+.apple .apple_back {
+    position: absolute;
+    width: 60px;
+    top: 180px;
+    left: 50px;
+}
+.apple p {
+    font-size: 26px;
+    letter-spacing: -0.05em;
+}
+.apple .applemain {
+    position: absolute;
+    width: 885px;
+    top: 350px;
+    left: 50px;
+    box-shadow: 5px 5px 5px #000;
+}
+.apple .p_applemain {
+    position: absolute;
+    top: 320px;
+    left: 50px;
+}

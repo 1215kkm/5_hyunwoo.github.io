@@ -1,0 +1,11 @@
+@charset "utf-8";
+            
+* {margin: 0; padding: 0}
+li {list-style: none;}
+img {border: 0}
+a {text-decoration: none; color: #111111}
+body {font-family: "Rix멜랑촐리 M", "Peanuts", "Snoopy", "멜랑촐리체", "OdBestFreind", "Od베스트프렌";}
+button, fieldset, input {border: 0; outline: 0; background: none;}
+button {cursor: pointer;}
+table {border-collapse: collapse; border-spacing: 0}
+caption, legend {font-size: 0; color: transparent; text-indent: -9999px; overflow: hidden;}
